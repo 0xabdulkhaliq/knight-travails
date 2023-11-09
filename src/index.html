@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Knight Travails - Find the optimal path for your Knight's journey."
+    />
+    <meta
+      name="keywords"
+      content="0xabdulkhalid, graph, BST, data structure, sorting, algorithms, programming"
+    />
+    <meta name="author" content="0xabdulkhalid" />
+    <meta name="theme-color" content="#cacde8" />
+
+    <title>Knight Travails</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap"
+      />
+    </noscript>
+    <link rel="icon" href="./images/favicon.svg" sizes="any" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Knight Travails</h1>
+
+      <button
+        class="header__theme-toggle"
+        id="theme-toggle"
+        title="Toggles light & dark"
+        aria-label="auto"
+        aria-live="polite"
+        tabindex="0"
+      ></button>
+    </header>
+
+    <main>
+      <div class="main__chessboard"></div>
+
+      <div class="main__actions">
+        <button id="place-knight">Place Knight Manually</button>
+        <button id="random-knight">Place Knight Randomly</button>
+        <button id="select-end">Select End</button>
+        <button id="travail">Travail</button>
+        <button id="clear">Clear</button>
+      </div>
+
+      <div class="main__notifier--wrap">
+        <div class="main__notifier">
+          <div class="notifier__decor" aria-hidden="true">i</div>
+
+          <h2 class="notifier__text">You want to Place Knight and then Select End to Travail</h2>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2023 Copyright -
+      <a
+        href="https://github.com/0xabdulkhalid"
+        target="_blank"
+        class="footer__link"
+        rel="noopener noreferrer"
+        aria-describedby="Abdul khalid's Github profile"
+        >0xabdulkhalid
+      </a>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
