@@ -1,12 +1,24 @@
 import { createKnight, isKnightActive } from "./button"
 
-function instantiateNotifier() {
-  const notifier = document.querySelector(".main__notifier--wrap")
+async function instantiateNotifier() {
+  const notifier = document.createElement("div")
+  notifier.innerHTML = `
+       <div class="main__notifier">
+          <div class="notifier__decor" aria-hidden="true">i</div>
+          <h2 class="notifier__text">You want to Place Knight and then Select End to Travail</h2>
+        </div>
+  `
+  notifier.classList.add("main__notifier--wrap")
+  document.querySelector("main").append(notifier)
+
+  await new Promise((resolve) => setTimeout(resolve, 50))
   notifier.classList.toggle("main__notifier--active")
 
-  setTimeout(() => {
-    notifier.classList.toggle("main__notifier--active")
-  }, 4000)
+  await new Promise((resolve) => setTimeout(resolve, 4000))
+  notifier.classList.toggle("main__notifier--active")
+
+  await new Promise((resolve) => setTimeout(resolve, 600))
+  notifier.remove()
 }
 
 async function animateTravails(moves) {
