@@ -1,5 +1,4 @@
 <br>
-
 <div align="center">
 <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.herokuapp.com?font=Space+Grotesk&weight=600&size=40&pause=&color=000&center=true&vCenter=true&repeat=false&random=false&width=280&height=60&lines=Knight+Travails">
@@ -34,7 +33,7 @@
 > [!NOTE]  
 > If you prefer not to install it locally, you can also access the [live demo](https://knight-travails.vercel.app/) version
 
-To set up the BST Application locally, follow these steps:
+To set up the Knight Travails Application locally, follow these steps:
 
 1. Clone the GitHub repository to your local machine:
 
